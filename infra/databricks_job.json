@@ -40,6 +40,22 @@
       "notebook_task": {
         "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/04_clause_segmentation"
       }
+    },
+    {
+      "task_key": "train_clause_classifier",
+      "depends_on": [{"task_key": "train_clause"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/05_train_clause_classifier"
+      }
+    },
+    {
+      "task_key": "train_risk_model",
+      "depends_on": [{"task_key": "train_clause_classifier"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/06_train_risk_model"
+      }
     }
   ]
 }
