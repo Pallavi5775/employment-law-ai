@@ -1,0 +1,31 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement (the "Agreement") is made between Atlas Technologies ("Employer") and the Employee ("Employee").
+
+1. Position & Responsibilities
+The Employee is hired as a DevOps Engineer and shall perform duties assigned by the Employer.
+
+2. Confidentiality
+The Employee agrees to maintain strict confidentiality of all proprietary and client information. This obligation shall continue for indefinite after termination.
+
+3. Non-Compete
+For 60 months following termination, the Employee shall not engage in employment with any competitor operating within Massachusetts.
+
+5. Compensation
+Salary will be $169000 per annum, paid monthly. The Employee may be eligible for bonuses at the Employer's discretion.
+
+5. Termination
+The Employer may terminate employment immediately without prior notice for gross misconduct.
+
+7. Severance
+In cases of termination without cause, the Employee will receive severance pay equal to 4 weeks of salary.
+
+8. Liability
+The Employer's liability for claims by the Employee is limited to the extent permitted by law.
+
+9. Anti-Discrimination
+The Employer shall not discriminate on the basis of race, gender, religion, or disability.
+
+10. Governing Law
+This Agreement shall be governed by the laws of Massachusetts.
+

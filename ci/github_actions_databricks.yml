@@ -1,0 +1,25 @@
+name: Deploy Databricks Job
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Databricks CLI
+        run: pip install databricks-cli
+
+      - name: Configure Databricks CLI
+        run: |
+          databricks configure --token << EOF
+          $DATABRICKS_HOST
+          $DATABRICKS_TOKEN
+          EOF
+
+      - name: Deploy Job
+        run: databricks jobs reset --job-id $DATABRICKS_JOB_ID --json-file jobs/databricks_job.json

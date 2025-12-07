@@ -1,0 +1,53 @@
+{
+  "name": "Employment-Law-ETL-MLPipeline",
+  "max_concurrent_runs": 1,
+  "email_notifications": {
+    "on_failure": ["pallavidapriya75@gmail.com"]
+  },
+  "tasks": [
+    {
+      "task_key": "bronze",
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/01_bronze_ingest",
+        "base_parameters": {
+          "raw_path": "abfss://contracts@.../raw/",
+          "bronze_path": "abfss://contracts@.../bronze/",
+          "checkpoint": "dbfs:/checkpoints/contracts/bronze"
+        }
+      }
+    },
+    {
+      "task_key": "silver",
+      "depends_on": [{"task_key": "bronze"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/02_silver_transform"
+      }
+    },
+    {
+      "task_key": "gold",
+      "depends_on": [{"task_key": "silver"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/03_gold_clause_segmentation"
+      }
+    },
+    {
+      "task_key": "train_clause",
+      "depends_on": [{"task_key": "gold"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/04_train_clause_classifier"
+      }
+    },
+    {
+      "task_key": "train_risk",
+      "depends_on": [{"task_key": "train_clause"}],
+      "existing_cluster_id": "1205-051404-co0w9x9e",
+      "notebook_task": {
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/05_train_risk_model"
+      }
+    }
+  ]
+}

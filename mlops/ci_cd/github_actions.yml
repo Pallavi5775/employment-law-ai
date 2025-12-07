@@ -1,0 +1,11 @@
+name: CI/CD
+on: [push]
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build docker
+        run: |
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/employment-ai:latest deploy/inference_api
+          echo 'built'

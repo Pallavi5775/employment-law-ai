@@ -1,0 +1,31 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement (the "Agreement") is made between Orion Labs ("Employer") and the Employee ("Employee").
+
+1. Position & Responsibilities
+The Employee is hired as a Software Engineer and shall perform duties assigned by the Employer.
+
+2. Confidentiality
+The Employee agrees to maintain strict confidentiality of all proprietary and client information. This obligation shall continue for 5 years after termination.
+
+4. Intellectual Property Assignment
+All inventions, code, and work products created during employment shall be the sole property of the Employer.
+
+5. Compensation
+Salary will be $102000 per annum, paid monthly. The Employee may be eligible for bonuses at the Employer's discretion.
+
+5. Termination
+The Employer may terminate employment immediately without prior notice for gross misconduct.
+
+8. Liability
+The Employer's liability for claims by the Employee is limited to the extent permitted by law.
+
+11. Arbitration
+Any dispute under this Agreement shall be resolved by binding arbitration in New York.
+
+9. Anti-Discrimination
+The Employer shall not discriminate on the basis of race, gender, religion, or disability.
+
+10. Governing Law
+This Agreement shall be governed by the laws of New York.
+

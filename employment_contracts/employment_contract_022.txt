@@ -1,0 +1,36 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement (the "Agreement") is made between Acme Corp. ("Employer") and the Employee ("Employee").
+
+1. Position & Responsibilities
+The Employee is hired as a Senior Software Engineer and shall perform duties assigned by the Employer.
+
+2. Confidentiality
+The Employee agrees to maintain strict confidentiality of all proprietary and client information. This obligation shall continue for 2 years after termination.
+
+X. Employer may change terms and conditions at any time without notice.
+
+3. Non-Compete
+For 36 months following termination, the Employee shall not engage in employment with any competitor operating within Massachusetts.
+
+4. Intellectual Property Assignment
+All inventions, code, and work products created during employment shall be the sole property of the Employer.
+
+5. Compensation
+Salary will be $120000 per annum, paid monthly. The Employee may be eligible for bonuses at the Employer's discretion.
+
+6. Notice Period
+Either party may terminate this Agreement by giving 60 days written notice.
+
+8. Liability
+The Employer's liability for claims by the Employee is limited to the extent permitted by law.
+
+11. Arbitration
+Any dispute under this Agreement shall be resolved by binding arbitration in Massachusetts.
+
+9. Anti-Discrimination
+The Employer shall not discriminate on the basis of race, gender, religion, or disability.
+
+10. Governing Law
+This Agreement shall be governed by the laws of Massachusetts.
+

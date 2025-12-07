@@ -1,0 +1,6 @@
+# Placeholder retraining YAML to be triggered by drift alerts
+trigger: manual_or_schedule
+steps:
+  - run data_prep
+  - run train_clause
+  - run eval_and_register

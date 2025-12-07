@@ -1,0 +1,23 @@
+$schema: https://azuremlschemas.azurewebsites.net/latest/pipelineJob.schema.json
+type: pipeline
+jobs:
+  data_prep:
+    type: command
+    command: >-
+      python data_engineering/prepare_data.py
+    environment: azureml:AzureML-Minimal-py38:1
+    compute: azureml:cpu-cluster
+  train_clause:
+    type: command
+    command: >-
+      python training/train_clause_classifier.py --output models/clause_model
+    environment: azureml:AzureML-Minimal-py38:1
+    compute: azureml:gpu-cluster
+    dependsOn: [data_prep]
+  train_risk:
+    type: command
+    command: >-
+      python training/train_risk_model.py
+    environment: azureml:AzureML-Minimal-py38:1
+    compute: azureml:cpu-cluster
+    dependsOn: [train_clause]
