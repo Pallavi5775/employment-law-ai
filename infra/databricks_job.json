@@ -9,7 +9,7 @@
       "task_key": "bronze",
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/01_bronze_ingest",
+        "notebook_path": "/Users/pallavidapriya75@outlook.com/employment-law-ai/notebooks/01_bronze_ingest",
         "base_parameters": {
           "raw_path": "abfss://contracts@ragstorage4122025.dfs.core.windows.net/raw/",
           "bronze_path": "abfss://contracts@ragstorage4122025.dfs.core.windows.net/bronze/",
@@ -22,7 +22,7 @@
       "depends_on": [{"task_key": "bronze"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/02_silver_transform"
+        "notebook_path": "/Users/pallavidapriya75@outlook.com/employment-law-ai/notebooks/02_silver_transform"
       }
     },
     {
@@ -30,7 +30,7 @@
       "depends_on": [{"task_key": "silver"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/03_gold_clause_segmentation"
+        "notebook_path": "/Users/pallavidapriya75@outlook.com/employment-law-ai/notebooks/03_gold_clause_segmentation"
       }
     },
     {
@@ -38,7 +38,7 @@
       "depends_on": [{"task_key": "gold"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/04_train_clause_classifier"
+        "notebook_path": "/Users/pallavidapriya75@outlook.com/employment-law-ai/notebooks/04_train_clause_classifier"
       }
     },
     {
@@ -46,7 +46,7 @@
       "depends_on": [{"task_key": "train_clause"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/05_train_risk_model"
+        "notebook_path": "/Users/pallavidapriya75@outlook.com/employment-law-ai/notebooks/05_train_risk_model"
       }
     }
   ]
