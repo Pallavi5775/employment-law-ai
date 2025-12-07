@@ -11,8 +11,8 @@
       "notebook_task": {
         "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/01_bronze_ingest",
         "base_parameters": {
-          "raw_path": "abfss://contracts@.../raw/",
-          "bronze_path": "abfss://contracts@.../bronze/",
+          "raw_path": "abfss://contracts@ragstorage4122025.dfs.core.windows.net/raw/",
+          "bronze_path": "abfss://contracts@ragstorage4122025.dfs.core.windows.net/bronze/",
           "checkpoint": "dbfs:/checkpoints/contracts/bronze"
         }
       }

@@ -22,4 +22,4 @@ jobs:
           EOF
 
       - name: Deploy Job
-        run: databricks jobs reset --job-id $DATABRICKS_JOB_ID --json-file jobs/databricks_job.json
+        run: databricks jobs reset --job-id $DATABRICKS_JOB_ID --json-file infra/databricks_job.json
