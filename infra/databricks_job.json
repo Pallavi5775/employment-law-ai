@@ -9,7 +9,7 @@
       "task_key": "bronze",
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/01_bronze_ingest",
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/01_ingest_autoloader",
         "base_parameters": {
           "raw_path": "abfss://contracts@ragstorage4122025.dfs.core.windows.net",
           "bronze_path": "abfss://bronze@ragstorage4122025.dfs.core.windows.net",
@@ -22,7 +22,7 @@
       "depends_on": [{"task_key": "bronze"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/02_silver_transform"
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/02_ocr_extraction"
       }
     },
     {
@@ -30,7 +30,7 @@
       "depends_on": [{"task_key": "silver"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/03_gold_clause_segmentation"
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/03_cleaning_and_pii_redaction"
       }
     },
     {
@@ -38,7 +38,7 @@
       "depends_on": [{"task_key": "gold"}],
       "existing_cluster_id": "1205-051404-co0w9x9e",
       "notebook_task": {
-        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/04_train_clause_classifier"
+        "notebook_path": "/Repos/Pallavi5775/employment-law-ai/notebooks/04_clause_segmentation"
       }
     },
     {
